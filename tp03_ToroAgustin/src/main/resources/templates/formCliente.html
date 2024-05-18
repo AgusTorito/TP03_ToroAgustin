@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario</title>
+<link rel="stylesheet" href="/css/style.css"></link>
+</head>
+<body>
+	 <header id="encabezado">
+    <nav class="menu">
+      <ul>
+        <li><a href="#seccion1" class="enlace1">Home</a></li>
+        <li><a href="#seccion2" class="enlace2">Formulario</a></li>
+        <li><a href="#seccion3" class="enlace3">Info de las Redes</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="main">
+	
+  	<h1>Formulario de Datos-Cliente</h1>
+  	<form action="/index" method="post">
+  		<section class="principal">
+  			<label for="dni">Ingrese el DNI</label>
+  			<input type="number" id="dni" required placeholder="Ingrese el DNI en numero"></input><br><br>
+  			<label for="nombre">Nombre</label>
+  			<input type="text" id="nombre" required placeholder="Ingrese el nombre"></input><br><br>
+  			<label for="apellido">Apellido</label>
+  			<input type="text" id="apellido" required placeholder="Ingrese el apellido"></input><br><br>
+  			<label for="fecNac">Fecha de Nacimiento</label>
+  			<input type="date" id="fecNac" required placeholder="Ingrese su Fecha de Nacimiento"></input><br><br>
+  		</section>
+  		<section class="genero">
+  			<label for="generoM">Maculino</label>
+  			<input type="radio" id="generoM" value="Masculino" name="genero"></input><br><br>
+  			<label for="generoF">Femenino</label>
+  			<input type="radio" id="generoF" value="Femenino" name="genero"></input><br><br>
+  			<label for="x">X</label>
+  			<input type="radio" id="x" value="Femenino" name="genero"></input><br><br>
+  		</section>
+  		<section class="email">
+  			<label for="correo">Correo Electronico</label>
+  			<input type="email" id="correo" required name="Correo" placeholder="Ingrese su gmail"></input><br><br>
+  		</section>
+  		<section class="direccion">
+  			<label for="domicilio">Domicilio</label>
+  			<input type="text" id="domicilio" required name="domicilio" placeholder="Ingrese su domicilio"></input><br><br>
+  		</section>
+  		<section class="localidad">
+  		<label for="provincia">Provincia</label>
+  		<select id="provincia" required name="provincia">
+  			<option value="Salta">Salta</option>
+  			<option value="Jujuy">Jujuy</option>
+  			<option value="Tucuman">Tucuman</option>
+  			<option value="Buenos Aires">Buenos Aires</option>
+  			<option value="Cordoba">Cordoba</option>
+  			<option value="Mendoza">Mendoza</option>
+  		</select><br><br>
+  		</section>
+  		<section class="movil">
+  			<label for="celular">Numero de Telefono</label><br><br>
+  			<input type="number" id="celular" name="celular" required placeholder="Ingrese su numero de telefono"></input><br><br>
+  		</section>
+  		
+  		<label>Categorias de Interes</label><br><br>
+  		<section class="categoria">
+  			<label for="interes">Futbol</label>
+  			<input type="checkbox" id="interes"  name="interes"><br><br>
+  			<label for="interes">Turismo</label>
+  			<input type="checkbox" id="interes"  name="interes"><br><br>
+  			<label for="interes">Gastronomia</label>
+  			<input type="checkbox" id="interes"  name="interes"><br><br>
+  			<label for="interes">Musica</label>
+  			<input type="checkbox" id="interes"  name="interes"><br><br>
+  			<label for="interes">Gimnasio</label>
+  			<input type="checkbox" id="interes"  name="interes"><br><br>
+  			<label for="interes">Carreras</label>
+  			<input type="checkbox" id="interes"  name="interes"><br><br>
+  		</section><br>
+  		<div>
+  			<label for="sugerencia">Sugerencias para la Empresa</label><br>
+  			<textarea id="sugerencia" name="sugerencia" placeholder="Ingrese un comentario" rows="8" cols="40"></textarea><br><br>
+  		</div>
+  		<div>
+  			<label for="password">Password</label>
+  			<input id="password" type="password" required name="password" placeholder="Ingrese su password" maxlength="10" minlength="4"><br><br>
+  			<label for="passwordNuevo">Repetir Password</label>
+  			<input id="passwordNuevo" type="password" required name="passwordNuevo" placeholder="Ingrese su password de nuevo" maxlength="10" minlength="4"><br><br>
+  		</div>
+  		<div>
+  			<label for="terYcond">Acepto los terminos y Condiciones</label>
+  			<input id="terYcond" name="terYcond" required type="checkbox"><br><br>
+  			<label for="info">Acepto recibir información relativa a la empresa</label>
+  			<input id="info" name="info"  type="checkbox"><br><br>
+  		</div>
+  		<div>
+  			<input type="button" value="Guardar">
+  			<input type="submit" value="Cancelar">
+  		</div>
+  	</form>
+  </main>
+  	<footer id="piePagina">
+    <h3 class="tituloh3">Mas Informacion en Redes Sociales:</h3>
+    <ul>
+   	  <li><a class="inicio" href="/index">Inicio</a></li>
+      <li><a class="enlaceCorreo" href="https:/www.gmail.com">prog_visualJAVA@gmail.com</a></li>
+      <li><a class="instagram" href="https://www.instagram.com">Instagram</a></li>
+      <li><a class="twitter" href="https://www.twitter.com">Twitter</a></li>
+    </ul>
+  </footer>	
+</body>
+</html>
